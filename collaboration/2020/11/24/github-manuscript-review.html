@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Markdown and GitHub for Scientific Writing | Asymptote</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Markdown and GitHub for Scientific Writing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="At this and last year’s SciPy conference, I learned to use GitHub for publishing and reviewing academic manuscripts. Although it has some limitations, using markup languages to write manuscripts and using GitHub for reviewing them has many benefits especially in terms of tracking, communication, and transparency." />
+<meta property="og:description" content="At this and last year’s SciPy conference, I learned to use GitHub for publishing and reviewing academic manuscripts. Although it has some limitations, using markup languages to write manuscripts and using GitHub for reviewing them has many benefits especially in terms of tracking, communication, and transparency." />
+<link rel="canonical" href="https://hongsups.github.io/blog/collaboration/2020/11/24/github-manuscript-review.html" />
+<meta property="og:url" content="https://hongsups.github.io/blog/collaboration/2020/11/24/github-manuscript-review.html" />
+<meta property="og:site_name" content="Asymptote" />
+<meta property="og:image" content="https://hongsups.github.io/blog/images/2020-11-24-HS_scipy_example_reviewer_screenshot.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-24T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://hongsups.github.io/blog/collaboration/2020/11/24/github-manuscript-review.html","@type":"BlogPosting","headline":"Markdown and GitHub for Scientific Writing","dateModified":"2020-11-24T00:00:00-06:00","datePublished":"2020-11-24T00:00:00-06:00","image":"https://hongsups.github.io/blog/images/2020-11-24-HS_scipy_example_reviewer_screenshot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://hongsups.github.io/blog/collaboration/2020/11/24/github-manuscript-review.html"},"description":"At this and last year’s SciPy conference, I learned to use GitHub for publishing and reviewing academic manuscripts. Although it has some limitations, using markup languages to write manuscripts and using GitHub for reviewing them has many benefits especially in terms of tracking, communication, and transparency.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hongsups.github.io/blog/feed.xml" title="Asymptote" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Asymptote</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Markdown and GitHub for Scientific Writing</h1><p class="page-description">At this and last year's SciPy conference, I learned to use GitHub for publishing and reviewing academic manuscripts. Although it has some limitations, using markup languages to write manuscripts and using GitHub for reviewing them has many benefits especially in terms of tracking, communication, and transparency.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-11-24T00:00:00-06:00" itemprop="datePublished">
+        Nov 24, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#collaboration">collaboration</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Last year, I was fortunate to have an opportunity to do a poster presentation at the <a href="https://www.scipy2019.scipy.org/">Scientific Computing in Python (SciPy) conference</a>. Every presenter has an option to submit a written proceedings and I decided to participate. I’ve never had a chance to present my ML work as a paper in industry, and so I thought it would be a good experience.</p>
+
+<p>I was a bit intimated when the conference committees said authors should submit their manuscripts as <strong>pull requests</strong> in their proceedings repository in GitHub. They also said manuscripts should be written in <a href="https://en.wikipedia.org/wiki/ReStructuredText">reStructuredText</a>. I have used git for many years but I have limited experience in collaborating with others on GitHub. Plus, I’ve never used reStructuredText (I’ve only used Markdown) and also have never written an academic manuscript in markup languages.</p>
+
+<p>In short, I eventually became to really enjoy the process of using markup languages for writing manuscripts and using GitHub for review. I will briefly talk about my experience at the SciPy and talk about why I think you should give it a try.</p>
+
+<h2 id="scientific-writing-in-markup-languages">Scientific writing in markup languages</h2>
+
+<p>There was a bit of learning curve but it wasn’t too difficult to get used to the reStructuredText syntax because there were some similarities between Markdown and reStructuredText (<code class="language-plaintext highlighter-rouge">rst</code>). The conference committee also provided <a href="https://raw.githubusercontent.com/hongsups/scipy_proceedings/2019/papers/00_bibderwalt/00_bibderwalt.rst">examples</a>. They also provided me with <a href="https://github.com/hongsups/scipy_proceedings/tree/2019/publisher">a PDF builder</a> that I could run locally. This helped me preview the final version of the PDF when it’s fully rendered. This was useful especially to decide the location of figures. There was a custom LaTeX builder in their repository too, which was invaluable.</p>
+
+<p>Compared with existing word processor softwares such as MS Word or Google Docs, using markup languages pose some challenges to the first-time users. First, you need to learn the syntax. There are some limitations on styling because not everything is rendered automatically (e.g., LaTeX) and sometimes you need to play with html and css files to get a more complex page layout.</p>
+
+<p>However, there are many benefits as well:</p>
+
+<ul>
+  <li>Every styling is written explicitly (e.g., <code class="language-plaintext highlighter-rouge">**</code> for bold in Markdown) and thus it is easily discoverable.</li>
+  <li>Code snippets can be automatically rendered in a standardized way.</li>
+  <li>It’s easy and fast to publish the manuscript online, which makes it easy to share.</li>
+  <li>Finally, with a right document builder, the above-mentioned pain points can be mitigated.</li>
+  <li>It is much easier and convenient to review the manuscript (see below).</li>
+</ul>
+
+<h2 id="using-github-for-submission-and-review">Using GitHub for submission and review</h2>
+
+<p><img src="/blog/images/2020-11-24-HS_scipy_example_author_screenshot.png" alt="" title="Screenshot of my pull request at the SciPy 2019" /></p>
+
+<p><img src="/blog/images/2020-11-24-HS_scipy_example_reviewer_screenshot.png" alt="" title="Screenshot of the review conversation of a pull request I reviewed at the SciPy 2020" /></p>
+
+<p>Once I finished writing the manuscript, I submitted the main document and image files as a pull request. It was pretty straightforward because I was working alone in my own branch (you can find my pull request <a href="https://github.com/scipy-conference/scipy_proceedings/pull/468">here</a>). A few weeks later, two reviewers started commenting on my pull request. The whole process was quite simple and very similar to a typical review process in academia: reviewers left comments on certain parts of the manuscript and I responded. It also reminded me of a code review process. This year, I volunteered at the SciPy 2020 as a reviewer. I <a href="https://github.com/scipy-conference/scipy_proceedings/pull/550">reviewed a paper that was submitted as a pull request</a>.</p>
+
+<h2 id="benefits-of-github-for-reviewing-manuscripts">Benefits of GitHub for reviewing manuscripts</h2>
+
+<p>With these experiences, I learned that markup language with GitHub review process provides many benefits for scientific writing, compared with MS Word or Google Docs which are used in typical (academic) review process:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Markup + GitHub review</th>
+      <th>MS Word or Google Docs + Academic review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Discover exact changes</strong></td>
+      <td>Yes</td>
+      <td>Possible but can be confusing when many changes occur in one place</td>
+    </tr>
+    <tr>
+      <td><strong>Change versions easily</strong></td>
+      <td>Yes</td>
+      <td>May need multiple versions (separate files)</td>
+    </tr>
+    <tr>
+      <td><strong>Track communications</strong></td>
+      <td>Yes</td>
+      <td>Challenging because comments happen in the margin, which has a very limited space. Otherwise, they are addressed in a separate space (like a letter).</td>
+    </tr>
+    <tr>
+      <td><strong>Text override or unauthorized edits</strong></td>
+      <td>No (permission needed)</td>
+      <td>Can happen if tracking option is off or multiple files exist</td>
+    </tr>
+    <tr>
+      <td><strong>Group communication</strong></td>
+      <td>Yes</td>
+      <td>No. Normally reviewers don’t talk to each other. Reviewers communicate individually with authors.</td>
+    </tr>
+    <tr>
+      <td><strong>Immediate responsiveness</strong></td>
+      <td>High (online comments)</td>
+      <td>Low. Letters or emails need to be exchanged, which can take months.</td>
+    </tr>
+    <tr>
+      <td><strong>Communication transparency</strong></td>
+      <td>High</td>
+      <td>Almost none (academic review). Normally double-blind. A reviewer can’t normally read other reviews during the review process.</td>
+    </tr>
+    <tr>
+      <td><strong>Public transparency</strong></td>
+      <td>Yes (public repositories)</td>
+      <td>Almost none. Very rare to publish the whole conversation between reviewers and authors.</td>
+    </tr>
+    <tr>
+      <td><strong>One place for everything</strong></td>
+      <td>Yes</td>
+      <td>No. Normally non-document type files exist in a different place.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In short, the main benefit of using GitHub for reviewing manuscript comes from that <strong>GitHub is an excellent version control tool</strong>. It prevents reviews (new changes) and the manuscript (original file) from getting mixed up and allows us to track changes meticulously.</p>
+
+<p>Another huge benefit is <strong>transparency</strong>. If our repository and pull requests are public, the entire review process can be seen by anyone. This way, every decision making process is tracked and stays public, which minimizes potential dispute or abuse between authors and reviewers. Given that academia is not capable of perfect self-governance and some academic disciplines have reproducibility problems, transparent review process like this can become a solution.</p>
+
+<h2 id="final-thoughts">Final thoughts</h2>
+
+<p>It is true that markup languages may not always be perfect for writing a manuscript. Some people are more familiar with traditional word processing softwares where styles are immediately rendered and more style options are available. However, based on my experience with the SciPy conference, especially, being at the both ends of the review process, I can say the benefits of using markup language for scientific writing and using GitHub for review outweighs its caveats. Manuscripts written in markup languages can be easily reviewed in GitHub where we can utilize its excellent built-in tools to achieve <strong>better tracking, communication, and transparency.</strong></p>
+
+  </div><a class="u-url" href="/blog/collaboration/2020/11/24/github-manuscript-review.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Machine learning and tech blog by Hongsup Shin</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/hongsups" title="hongsups"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

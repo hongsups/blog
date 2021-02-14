@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Fairness in Machine Learning at ACM FAT 2019 | Asymptote</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Fairness in Machine Learning at ACM FAT 2019" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the second time I attended the ACM FAT (Fairness, Accountability, and Transparency in ML) conference. I summarized several key moments from the conference and shared my thoughts in this post." />
+<meta property="og:description" content="This is the second time I attended the ACM FAT (Fairness, Accountability, and Transparency in ML) conference. I summarized several key moments from the conference and shared my thoughts in this post." />
+<link rel="canonical" href="https://hongsups.github.io/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html" />
+<meta property="og:url" content="https://hongsups.github.io/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html" />
+<meta property="og:site_name" content="Asymptote" />
+<meta property="og:image" content="https://hongsups.github.io/blog/images/2019-02-01-acm-fat.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-01T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://hongsups.github.io/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html","@type":"BlogPosting","headline":"Fairness in Machine Learning at ACM FAT 2019","dateModified":"2019-02-01T00:00:00-06:00","datePublished":"2019-02-01T00:00:00-06:00","image":"https://hongsups.github.io/blog/images/2019-02-01-acm-fat.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"https://hongsups.github.io/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html"},"description":"This is the second time I attended the ACM FAT (Fairness, Accountability, and Transparency in ML) conference. I summarized several key moments from the conference and shared my thoughts in this post.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hongsups.github.io/blog/feed.xml" title="Asymptote" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Asymptote</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fairness in Machine Learning at ACM FAT 2019</h1><p class="page-description">This is the second time I attended the ACM FAT (Fairness, Accountability, and Transparency in ML) conference. I summarized several key moments from the conference and shared my thoughts in this post.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-02-01T00:00:00-06:00" itemprop="datePublished">
+        Feb 1, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#conference">conference</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#fairness">fairness</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#ML">ML</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>ACM Conference on Fairness, Accountability, and Transparency (ACM FAT*) is a “multi- disciplinary conference that brings together researchers and practitioners interested in fairness, accountability, and transparency in socio-technical systems.” The conference originated from a fairness workshop in machine learning workshop at NIPS a few years and last year they had the first inaugural event as an independent conference. This year, they were joined with ACM and it was held in Atlanta, GA in Jan 2019. I attended both the tutorials and the main conference.</p>
+
+<h2 id="general-thoughts">General thoughts</h2>
+
+<p>Compared to the last year’s conference, which I also attended, it seemed that the academic discipline has become more mature; last year, there were many talks focused on showing the examples of biased machine learning in practice and researchers discussed how they can agree upon defining terms such as fairness in mathematical concept. This year, there were many in- depth theoretical studies where researchers built mathematical models to simulate the propagated effect of bias in machine learning (ML). Empirical studies were also presented as well, in which researchers crowd-sourced data to show bias in human judgment especially when they interact with ML algorithms. Unfortunately, due to the recent long-term government shutdown, there weren’t many government officials who were supposed to participate. Hence, it was lacking to see how the discoveries made in academia can be translated into actual policies and legislation. However, it’s important to notice that there is huge growing interest in this field as ML-based algorithmic decision making is widespread in our society.</p>
+
+<p><img src="/blog/images/2019-02-01-acm-fat.jpeg" alt="" title="From Moritz Hardt's CS 294: Fairness in Machine Learning course" /></p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<p>For tutorials, I attended the <a href="https://www.youtube.com/watch?v=nksfAaEJtm8">Translation Tutorial: A History of Quantitative Fairness in Testing</a> and <a href="https://youtu.be/XCFDckvyC0M">Hands-on Tutorial: AI Fairness 360 Part 1</a> and <a href="https://youtu.be/_TueqDj_vfU">Part 2</a>.</p>
+
+<p>The tutorials are divided into two categories: translation and hands-on. Since the conference is multi-disciplinary, there are attendees from various backgrounds; computer science, social science, law and policy, etc.</p>
+
+<h3 id="translation-tutorial-a-history-of-quantitative-fairness-in-testing">Translation Tutorial: A History of Quantitative Fairness in Testing</h3>
+
+<p>The translation tutorials are designed to have everyone more or less be on the same page. This specific translation tutorial I attended seemed to be aimed at computer scientists who are not much aware of the history of research on fairness and automated decision making. This was given by Google researchers Ben Hutchinson and Margaret Mitchell, who showed that the growing current interest on fairness in ML isn’t something new but existed in 1960’s when the civil rights movement started, which made sense.</p>
+
+<p>Then, the interest was on designing fair standardized tests like SAT or LSAT. Based on correlation studies, researchers then discovered that standardized tests require specific cultural knowledge, which is unfair to racial minorities. There were several views on how to build a fairer model, similar to the various modeling perspectives found in modern studies, such as whether to use sensitive features like race or gender exclusively in models. Also, researchers then pointed out that what we are trying to predict and what we should do are two different questions, which is always mentioned in almost every presentation at this conference.</p>
+
+<p>Ben and Margaret finished the talk by inspiring the audience with various research opportunities that we can learn from the history. For instance, these historical studies started by asking the question of “what is unfair?” instead of the definition of fairness itself. Correlation- based approach and addressing regression problem (instead of classification) in fairness are other examples.</p>
+
+<h3 id="hands-on-tutorial-ai-fairness-360">Hands-on Tutorial: AI Fairness 360</h3>
+
+<p>The second tutorial I attended (“AI Fairness 360”) was a hands-on one. Here, I learned about IBM Research’s effort to build an open-source Python package that implemented mathematical definition of various fairness criteria and how to apply them to a user’s existing workflow. The package seemed quite comprehensive and had great usability for the following reasons:</p>
+
+<ul>
+  <li>There is no one definition that satisfies all the needs and hence they have implemented a variety of metrics.</li>
+  <li>The package addresses different steps in ML pipeline where the fairness adjustment (i.e., mitigation algorithm) can be made: pre-process (mitigation to training data), in-process (mitigation to model during training), post-process (mitigation to predicted labels). This gives freedom and flexibility in the mitigation process.</li>
+  <li>Its syntax is similar to scikit-learn, which make everything easy and familiar. Plus, their API is well-established, and the repository has many notebook examples.</li>
+  <li>The package can have various types of data (tabular, images, etc.)</li>
+</ul>
+
+<p>This is just a start and of course, there are aspects that can be improved and investigated. First, some mitigation algorithms require tuning. It’ll be interesting to understand how this works on top of the main ML model’s tuning process. Since there are various fairness metrics, it would be nice to directly target those metrics for tuning. When a mitigation algorithm is applied, we sometimes see a compromise in model performance. In this case, it will be interesting to conduct an error analysis to find in which examples the model starts missing predictions.</p>
+
+<h2 id="keynote">Keynote</h2>
+
+<p>There were two keynotes from two very different domains: computer science and law. The computer science one was given by Jon Kleinberg at Cornell University. His talk was about mathematical formulation of a mitigation policy called Rooney Rule. The Rooney Rule is a requirement that at least one of the finalists be chosen from the affected group. His researched showed that it not only improves the representation of this affected group, but also leads to higher payoffs in absolute terms for the organization performing the recruiting. He presented a mathematical proof to prove his point. His model has only three parameters: composition of pool (diversity), level of bias, and abundance of outliers (superstars) and he showed that with certain constraints, Rooney Rule can be used to improve to the utility of the entire group (not just for the minority).</p>
+
+<p>The second one was given by Deirdre Mulligan from UC Berkeley. Her talk was on “fostering cultures of algorithmic responsibility through administrative law and design”. She started by citing the case Loomis v. Wisconsin where Eric Loomis challenged the State of Wisconsin’s use of proprietary, closed-source risk assessment software (COMPAS) in the sentencing of himself to six years in prison. His argument was that there was gender and race bias in the software, which was also addressed by many investigative journalists. One of the interesting and disappointing part of this case was that the court addressed that “it is unclear how COMPAS accounts for gender and race…”, meaning the lack of transparency of the software but also the lack of ability to handle these cases in law. To fix this problem, she emphasized that there should be case laws addressing limits and details of math and algorithms, but more importantly, a “contestable” design. This means whenever there is a wrong done to a person by automated decision, they should be able to contest on this algorithmic decision.</p>
+
+<h2 id="main-sessions">Main sessions</h2>
+
+<p>In total, there were 11 sessions and there was a wide range of topics ranging from problem formulation to content distribution and economic models. The following sessions stood out.</p>
+
+<h3 id="framing-and-abstraction">Framing and Abstraction</h3>
+
+<p>The talks in this session here mentioned that problems in ML projects can start from the very beginning where ML practitioners and data scientists start formulating ideas and framing problems. For examples, if what one wants to measure cannot be obtained or measurable, they use a proxy that is correlated to the original metric they wanted to measure. Sometimes data scientists transform a regression problem as classification by discretizing variables. Unfortunately, these decisions are often not well documented even though they happen in many layers in a ML project.</p>
+
+<h3 id="profiling-and-representation">Profiling and Representation</h3>
+
+<p>Chakraborty at al. presented an interesting idea of handling online trolls in their talk, “Equality of Voice: Towards Fair Representation in Crowdsourced Top-K Recommendations.” Since algorithms trained by online user data make often offensive and biased prediction, they came up with a fairer “voting” system by considering that there are a few bad actors (the trolls) and that most users are silent (who don’t case a vote). Here, the main challenge was the latter because they need to infer how a silent user might have voted. To solve this, they used existing personalized recommendation techniques.</p>
+
+<h3 id="fairness-methods">Fairness methods</h3>
+
+<p>In “From Soft Classifiers to Hard Decisions: How fair can we be?”, Canetti at al. tackles the fairness problem by implementing a deferral process. Instead of making hard yes/no decisions, the model can defer the decision to a group of moderators so that they can gather more information and make more socially-acceptable decisions. Their paper discussion a couple of options of deferrals: applying different thresholds per group for deferral or equalizing the accuracy with equal deferral rate.</p>
+
+<p>Similarly, in “Deep Weighted Averaging Classifiers”, Card et al. questions when we should know when not to trust a classifier. On top of traditional model performance, they come up with a separate measure of model credibility which can address whether this model is a right tool. They provided a fun example where they build a model by using the MNIST dataset and then used the trained model on the Fashion MNIST (the former has images of numerical digits and the latter, images of clothes and shoes). The model can still make predictions but clearly this model is not built for the testing data. In this case, the model’s “credibility” is very low.</p>
+
+<h3 id="explainability">Explainability</h3>
+
+<p>Ustun at al. points out that explanability does not mean contestability in their talk, “Actionable Recourse in Linear Classification”. When a model explains why your loan is rejected, it doesn’t mean what you should do about it, especially the explanation is based on immutable features like your race. They suggest that we should have a system and model that provides “ability to obtain a desired prediction from a model by changing actionable input” so that the model’s explanation is actually useful. Their tool provides two answers: 1) what users can do to flip the decision and 2) the proof of no recourse (by checking every option in actionable features). The second answer can be still valuable because then it provides the user with contestable information.</p>
+
+<h3 id="economic-models">Economic Models</h3>
+
+<p>There were two dedicated sessions just for economic fairness, new to this year’s program compared to the last year’s. One interesting concept discussed in multiple talks was “strategic manipulation.” It is also called “Stackelberg game”, where candidates might try to change their feature to game the system (the model) and the learner anticipates this and adjust the classifier by changing the decision boundary more stringent, which can also result in changes in candidates’ behavior. Milli et al.’s discussed in “The Social Cost of Strategic Classification” that so far the approach to this problem has institutional-centric view. For instance, when the institution, who build the model, wants to come up with a counter-measure to strategic manipulation, they weigh hard-to-change features such as parents’ income or zip code more highly. Then it becomes extremely high-cost for credit-worthy individuals in the wrong zip code area to obtain a loan, meaning the social burden is now on individuals. Their study found that as the game is played, individual social burden increases and returns more unfair outcome.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>I enjoy this conference very much not just because of personal interest but also of the fact that studies discussed here emphasize robustness and responsibility of ML algorithms, often ignored in ML community. Plus, the crosstalk between different domains enlighten me because they the topics can be applied to many aspects of ML engineering work. The theoretical studies provide new insights on how to measure abstract concepts like fairness and bias, transferrable to processes like problem statement that are highly important in ML. The empirical studies help theoretical studies grounded and more realistic. Finally, the law and policy side of works emphasizes the real implementation of these studies, which resembles constructing deployment plans and the results with stakeholders.</p>
+
+
+  </div><a class="u-url" href="/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Machine learning and tech blog by Hongsup Shin</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/hongsups" title="hongsups"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

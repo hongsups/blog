@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://hongsups.github.io/blog/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
+<loc>https://hongsups.github.io/blog/conference/fairness/ml/2019/02/01/acm-fat-2019.html</loc>
+<lastmod>2019-02-01T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://hongsups.github.io/blog/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
+<loc>https://hongsups.github.io/blog/ethics/2020/01/30/cade-workshop-refelection.html</loc>
+<lastmod>2020-01-30T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://hongsups.github.io/blog/conference/fairness/ml/2020/03/01/acm-fat-2020.html</loc>
+<lastmod>2020-03-01T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://hongsups.github.io/blog/2020/09/01/data_insight_OIS_report.html</loc>
+<lastmod>2020-09-01T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://hongsups.github.io/blog/ml/verification/2020/09/22/arm-rsh-blog-verification.html</loc>
+<lastmod>2020-09-22T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://hongsups.github.io/blog/collaboration/2020/11/24/github-manuscript-review.html</loc>
+<lastmod>2020-11-24T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://hongsups.github.io/blog/about/</loc>
