@@ -9,3 +9,72 @@
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
+
+.page-content {
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    font-family: Roboto, Lato, "Segoe UI", SegoeUI, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+}
+
+.category-tags-link {
+    color:rgb(164, 57, 174) !important;
+    font-size: 15px !important;
+    font-weight: bold;
+  }
+
+.post-meta-title, .post-meta{
+    margin-top: .25em !important;
+    margin-bottom: .25em !important;
+    font-size: 105%;
+    color: rgb(151, 149, 170);
+}
+
+.post-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    // font-weight: bold;
+}
+// .post-meta-description {
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+// }
+
+.container {
+    padding: 0px 50px 50px 50px;
+&__image {
+    width: 15%;
+    margin: 0px 30px 30px 0;
+    vertical-align: middle;
+    float: left;}
+&__text {
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: inline;
+    vertical-align: middle;}
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(10, 157, 108);
+}
+
+.footnotes {
+    p, li{
+      font-size: 18px !important;
+   } 
+  }
+
+.post figcaption {
+    font-size: medium;
+}
+  
+.site-title {
+    color: darkblue;
+}
+
+table {
+    th{
+        font-size: 120%;
+    }
+    td{
+        font-size: 120%;
+    }
+  }
