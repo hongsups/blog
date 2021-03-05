@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Notes on FAccT 2021 Tutorial Sessions | Asymptote</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Notes on FAccT 2021 Tutorial Sessions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is my 4th time attending the ACM FAccT conference (previously called ACM FAT). This year, due to the pandemic, the conference is held virtual. Starting from today, I will upload a summary of each day in a short post. This post summarizes the tutorials I attended today." />
+<meta property="og:description" content="This is my 4th time attending the ACM FAccT conference (previously called ACM FAT). This year, due to the pandemic, the conference is held virtual. Starting from today, I will upload a summary of each day in a short post. This post summarizes the tutorials I attended today." />
+<link rel="canonical" href="https://hongsups.github.io/blog/conference/causality/fairness/explainability/responsible%20ai/ml/2021/03/04/facct-2021-tutorial.html" />
+<meta property="og:url" content="https://hongsups.github.io/blog/conference/causality/fairness/explainability/responsible%20ai/ml/2021/03/04/facct-2021-tutorial.html" />
+<meta property="og:site_name" content="Asymptote" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-04T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://hongsups.github.io/blog/conference/causality/fairness/explainability/responsible%20ai/ml/2021/03/04/facct-2021-tutorial.html","@type":"BlogPosting","headline":"Notes on FAccT 2021 Tutorial Sessions","dateModified":"2021-03-04T00:00:00-06:00","datePublished":"2021-03-04T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://hongsups.github.io/blog/conference/causality/fairness/explainability/responsible%20ai/ml/2021/03/04/facct-2021-tutorial.html"},"description":"This is my 4th time attending the ACM FAccT conference (previously called ACM FAT). This year, due to the pandemic, the conference is held virtual. Starting from today, I will upload a summary of each day in a short post. This post summarizes the tutorials I attended today.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hongsups.github.io/blog/feed.xml" title="Asymptote" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Asymptote</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Notes on FAccT 2021 Tutorial Sessions</h1><p class="page-description">This is my 4th time attending the ACM FAccT conference (previously called ACM FAT). This year, due to the pandemic, the conference is held virtual. Starting from today, I will upload a summary of each day in a short post. This post summarizes the tutorials I attended today.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-04T00:00:00-06:00" itemprop="datePublished">
+        Mar 4, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#conference">conference</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#causality">causality</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#fairness">fairness</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#explainability">explainability</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#responsible AI">responsible AI</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#ML">ML</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Last year during the SciPy 2020 conference, I participated in a mentoring program and I’ve got to know a fellow data scientist, <a href="https://twitter.com/MrHenHan">Henrik Hain</a>. He diligently uploaded a daily update during the conference, which was impressive. Inspired by him, I’ve decided to follow his practice and to write notes during my attendance in the FAccT 2021 this year.</p>
+
+<h2 id="conference-overview">Conference Overview</h2>
+
+<p>The conference is held virtual this year for the obvious reason. It’s on a platform called <a href="https://circle.so/">circle.so</a>. Everything is organized that including video streaming, general announcement, community boards, internal messaging, etc., which is pretty convenient.</p>
+
+<p>It being virtual and an international conference, the schedule is a bit brutal. For my time zone (UTC-6), the first talk starts at 6 am and it lasts until 4-7 pm in the evening. Talks in the main session are pre-recorded and thus attendees can watch at their convenience but some sessions occur in live. Luckily, the conference organizers set up dedicated watching times for the main session, which I really appreciate.</p>
+
+<p>Today, all tutorial sessions were held. I attended the following tutorials:</p>
+<ul>
+  <li>Causal Fairness Analysis</li>
+  <li>Explainable ML in the Wild:  When Not to Trust Your Explanations</li>
+  <li>Responsible AI in Industry: Lessons Learned in Practice</li>
+  <li>A Behavioral and Economic Approach to Algorithmic Fairness &amp; Human-Centered Mechanism Design</li>
+  <li>How to Achieve Both Transparency and Accuracy in Predictive Decision Making:  an Introduction to Strategic Prediction</li>
+</ul>
+
+<p>Each tutorial was about 90 minutes, which felt very short. Since FATE topics are highly diverse, it makes sense to have many different tutorials but I felt every tutorial a bit too short. They weren’t really deep-dives but more of overview of certain topics (at least for the ones I attended).</p>
+
+<h2 id="causal-fairness-analysis">Causal Fairness Analysis</h2>
+
+<p>This tutorial was about conducting fairness analysis through causal framework by using <strong>structural causal models (SCMs)</strong>. I found the motivation from a legal perspective quite refreshing. The presenter (Elias Bareinboim) mentioned that the burden of proof is on the plaintiff in discrimination lawsuit. Thus, they have to prove the causal connection in unfair treatment.</p>
+
+<p>The material was relatively easy to follow in the beginning where Elias explained SCM models and how we evaluate them with given empirical data. However, it got a bit challenging to follow where we started combining fairness and causal models, especially given that fairness metrics are so diverse.</p>
+
+<p>For me the most interesting part was where Elias compared various counterfactual scenarios. I’ve always assumed that the causal DAGs will not change when we switch the group membership to simulate counterfactuals, but obviously there is no guarantee. It’s <strong>possible that we can have indirect and spurious effects for counterfactual scenarios</strong> and he explained that we need to subtract those effects from direct effects.</p>
+
+<h2 id="explainable-ml-in-the-wild--when-not-to-trust-your-explanations">Explainable ML in the Wild:  When Not to Trust Your Explanations</h2>
+
+<p>This tutorial consisted of three parts: overview of explainable AI (XAI) methods, their limitations and ethical/practical challenges. I found the second part most interesting.</p>
+
+<p>The speaker (Chirag Agarwal) introduced four aspects of XAI limitations: <strong>faithfulness, stability, fragility</strong>, and <strong>evaluation gap</strong>. Faithfulness refers to whether explanations change when models changes (and perhaps also <a href="https://dl.acm.org/doi/abs/10.1145/3351095.3372836">the Rashomon effect</a>). Stability refers to whether post-hoc explanations are unstable with respect to small non-adversarial input perturbation. For instance, some evidence shows that <a href="https://arxiv.org/abs/1602.04938">LIME</a> explanations may change if we change random seed in certain ML algorithms. We also wouldn’t want our models to chance explanations based on hyperparameters.</p>
+
+<p>Fragility is about whether explanation changes according to data drift in input space. This is closely related to adversarial attack on explanations (i.e., whether small perturbation can change explanation without changing prediction). Finally, in general, it is very difficult to properly evaluate XAI methods and currently there is no ground truth for evaluation.</p>
+
+<p>Perhaps because of these problematic features, the case studies presented in the following session felt very nuanced and complicated. As I’ve seen in other responsible AI talks, XAI methods are closely related to human-in-the-loop systems and the level of trust in human end users.</p>
+
+<h2 id="responsible-ai-in-industry-lessons-learned-in-practice">Responsible AI in Industry: Lessons Learned in Practice</h2>
+
+<p>This talk consisted of two parts: overview of responsible AI tools and related case studies. These tools are useful for <strong>model monitoring/inspection, generating explanations, fairness mitigation, error analysis, and counterfactual analysis</strong>. I was surprised that there are already several open-source tools available such as <a href="https://interpret.ml/">InterepretML</a>, <a href="https://fairlearn.org/">Fairlearn</a>, <a href="https://pair-code.github.io/what-if-tool/">What-If Tool</a>.</p>
+
+<p>The live demo from Microsoft was impressive but it was too fast to follow (I personally think Jupyter notebook isn’t the best method for presentation if we have to go back and forth a lot). Also I was not sure whether the examples were from deployed projects or toy datasets especially since the speaker talked about fairness mitigation and I was curious about how the full cycle of mitigation process looked like.</p>
+
+<p>The case study from LinkedIn at the end was interesting (especially since they presented similar material last year at the same conference) but it felt somewhat disconnected for the same reason I just mentioned above; I wasn’t sure how human end users were involved in the fairness mitigation process.</p>
+
+<h2 id="a-behavioral-and-economic-approach-to-algorithmic-fairness">A Behavioral and Economic Approach to Algorithmic Fairness</h2>
+
+<p>This talk was about looking at the fairness problem from economic perspective. Different from the traditional computer science approach, this talk suggested that economic approach presents the fairness problem in the form <strong>social welfare functions</strong> where social planner can optimize efficiency (expected outcome of interest among groups) and equity.</p>
+
+<p>What was interesting was that the optimal algorithm isn’t just about prediction function but also about <strong>admission rule</strong>, meaning how social planner can use the predictions to make decisions. Normally, these admission rules are threshold-based; we make a decision on certain group of individuals based on certain thresholds, which is affected by equity preference of social planner. Another interesting aspect was that this equity preference can even affect the prediction function because <strong>decision makers who prefer discrimination may want to use additional features</strong> from data to discriminate protected groups.</p>
+
+<h2 id="how-to-achieve-both-transparency-and-accuracy-in-predictive-decision-making-an-introduction-to-strategic-prediction">How to Achieve Both Transparency and Accuracy in Predictive Decision Making: an Introduction to Strategic Prediction</h2>
+
+<p>The whole idea of strategic prediction is very interesting because it’s about <strong>human users trying to game the system if they start understanding the rule of the game</strong>. For instance, if students learn about the criteria universities use for their admission process, they will try to find ways to cross that threshold so that they can be admitted. This tutorial gave an overview of this phenomenon from the perspective each stakeholder group in the process; institution (algorithm designers), individual (data provider), and society (all people as a whole).</p>
+
+<p>Instead of doing a deep dive on a specific topic, the tutorial presented various topics in the domain. <strong>Recourse and incentivization</strong> was one of them. If the deployed algorithm uses a feature that can harm individuals because the feature incentivizes them to behave in a certain way, automated harm at a massive scale will be expected. Another way to look at the strategic prediction is through causality. If we find a true <strong>causal relationship between features and model predictions</strong>, it might be able to utilize the benefit of strategic prediction from the institution’s perspective and to encourage improvement without encouraging gaming, which will be crucial for modellers.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="hongsups/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/conference/causality/fairness/explainability/responsible%20ai/ml/2021/03/04/facct-2021-tutorial.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Machine learning and tech blog by Hongsup Shin</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/hongsups" title="hongsups"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
