@@ -5,10 +5,7 @@ description: I participated a two-day workshop on tech ethics and policy at USF.
 categories: [ethics]
 title: Tech Policy Workshop and Data Ethics
 comments: false
-image: images/2020-01-30-presentation.png
 ---
-
-![]({{ site.baseurl }}/images/2020-01-30-presentation.png "Photo of a presentation from the CADE Tech Policy Workshop in Nov 2019")
 
 As a data scientist working in industry, I frequently witness the impact a machine learning application can make. This impact often has a cascade of downstream effects which are inconceivable to a data scientist without enough domain knowledge. Nevertheless, under the widespread motto, “move fast and break things,” in tech industry, ML practitioners tend to care little about the size of their products’ impact. In certain cases, they even overlook scientifically rigorous evaluation of their products. These phenomena have been greatly worrying me ever since I started my career in industry. My concern has deepened due to many recent instances of AI applications reproducing human bias on a massive scale and aggravating existing socioeconomic problems.
 

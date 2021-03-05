@@ -5,7 +5,6 @@ description: At this and last year's SciPy conference, I learned to use GitHub f
 categories: [collaboration]
 title: Markdown and GitHub for Scientific Writing
 comments: false
-image: images/2020-11-24-HS_scipy_example_reviewer_screenshot.png
 ---
 
 Last year, I was fortunate to have an opportunity to do a poster presentation at the [Scientific Computing in Python (SciPy) conference](https://www.scipy2019.scipy.org/). Every presenter has an option to submit a written proceedings and I decided to participate. I've never had a chance to present my ML work as a paper in industry, and so I thought it would be a good experience.

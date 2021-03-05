@@ -5,7 +5,6 @@ description: At Arm, I have been doing research to use ML to solve hardware veri
 categories: [ML, verification]
 title: Efficient Bug Discovery with Machine Learning for Hardware Verification
 comments: false
-image: images/2020-09-22-random-constraint-testing-diagram.png
 ---
 
 Imagine designing a highly complex machine. In order to be certain that it functions as its design specifies and does not have any bugs, you would need to test every aspect of the design exhaustively. If the machine is controlled by a set of knobs that can be turned on and off, this verification process can get exponentially complex. For instance, with a machine that has 100 binary on-off knobs, then 2<sup>100</sup> tests need to be run to cover all possible combinations. If we assume that a single test takes one second to run, this equates to 1022 years of testing. For present-day microprocessors, it is even more challenging. There can be thousands or tens of thousands of two-state flip-flops in a single microprocessor. Therefore, it is **impossible to verify microprocessor designs exhaustively**.
