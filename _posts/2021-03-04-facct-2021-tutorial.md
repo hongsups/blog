@@ -11,22 +11,22 @@ Last year during the SciPy 2020 conference, I participated in a mentoring progra
 
 ## Conference Overview
 
-The conference is held virtual this year for the obvious reason. It's on a platform called [circle.so](https://circle.so/). Everything is organized that including video streaming, general announcement, community boards, internal messaging, etc., which is pretty convenient.
+The conference is held virtually this year for the obvious reason. It's on a platform called [circle.so](https://circle.so/). Everything happens in one platform; video streaming, general announcement, community boards, internal messaging, etc., which is pretty convenient.
 
-It being virtual and an international conference, the schedule is a bit brutal. For my time zone (UTC-6), the first talk starts at 6 am and it lasts until 4-7 pm in the evening. Talks in the main session are pre-recorded and thus attendees can watch at their convenience but some sessions occur in live. Luckily, the conference organizers set up dedicated watching times for the main session, which I really appreciate.
+As an international *virtual* conference, the schedule is a bit brutal. For my time zone (UTC-6), the schedule starts at 6 am and lasts until 4-7 pm in the evening. Talks in the main session are pre-recorded and thus attendees can watch at their convenience but some sessions occur in real time. Luckily, the conference organizers set up dedicated watching times for the main session, which I really appreciate.
 
-Today, all tutorial sessions were held. I attended the following tutorials:
+Today was about tutorials. I attended the following:
 - Causal Fairness Analysis
 - Explainable ML in the Wild:  When Not to Trust Your Explanations
 - Responsible AI in Industry: Lessons Learned in Practice
 - A Behavioral and Economic Approach to Algorithmic Fairness & Human-Centered Mechanism Design
 - How to Achieve Both Transparency and Accuracy in Predictive Decision Making:  an Introduction to Strategic Prediction
 
-Each tutorial was about 90 minutes, which felt very short. Since FATE topics are highly diverse, it makes sense to have many different tutorials but I felt every tutorial a bit too short. They weren't really deep-dives but more of overview of certain topics (at least for the ones I attended).
+Each tutorial was about 90 minutes, which was a bit short for me. Since FATE (fairness, accountability, transparency, and ethics) topics are highly diverse, it makes sense to have many different tutorials. But because they were so short, they weren't much of a deep-dive and an overview (at least for the ones I attended).
 
 ## Causal Fairness Analysis
 
-This tutorial was about conducting fairness analysis through causal framework by using **structural causal models (SCMs)**. I found the motivation from a legal perspective quite refreshing. The presenter (Elias Bareinboim) mentioned that the burden of proof is on the plaintiff in discrimination lawsuit. Thus, they have to prove the causal connection in unfair treatment.
+This tutorial was about conducting fairness analysis through causal framework by using **structural causal models (SCMs)**. The speaker (Elias Bareinboim) started the talk by mentioning that the burden of proof is on the plaintiff in discrimination lawsuit, meaning they have to prove the causal connection if they were treated unfairly. I found this emphasis and motivation from legal lense quite refreshing.
 
 The material was relatively easy to follow in the beginning where Elias explained SCM models and how we evaluate them with given empirical data. However, it got a bit challenging to follow where we started combining fairness and causal models, especially given that fairness metrics are so diverse.
 
