@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>FAccT Day 1. AI Audit, Governance, and Trustworthiness | Asymptote</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="FAccT Day 1. AI Audit, Governance, and Trustworthiness" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Summary of Day 1 at the main program of the FAccT 2021. Today’s topics; algorithm audit, impact assessment, data governance, trust in AI, and explainable AI." />
+<meta property="og:description" content="Summary of Day 1 at the main program of the FAccT 2021. Today’s topics; algorithm audit, impact assessment, data governance, trust in AI, and explainable AI." />
+<link rel="canonical" href="https://hongsups.github.io/blog/governance/explainability/responsible%20ai/ml/2021/03/08/facct-2021-main1.html" />
+<meta property="og:url" content="https://hongsups.github.io/blog/governance/explainability/responsible%20ai/ml/2021/03/08/facct-2021-main1.html" />
+<meta property="og:site_name" content="Asymptote" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-08T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://hongsups.github.io/blog/governance/explainability/responsible%20ai/ml/2021/03/08/facct-2021-main1.html","@type":"BlogPosting","headline":"FAccT Day 1. AI Audit, Governance, and Trustworthiness","dateModified":"2021-03-08T00:00:00-06:00","datePublished":"2021-03-08T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://hongsups.github.io/blog/governance/explainability/responsible%20ai/ml/2021/03/08/facct-2021-main1.html"},"description":"Summary of Day 1 at the main program of the FAccT 2021. Today’s topics; algorithm audit, impact assessment, data governance, trust in AI, and explainable AI.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hongsups.github.io/blog/feed.xml" title="Asymptote" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Asymptote</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">FAccT Day 1. AI Audit, Governance, and Trustworthiness</h1><p class="page-description">Summary of Day 1 at the main program of the FAccT 2021. Today's topics; algorithm audit, impact assessment, data governance, trust in AI, and explainable AI.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-08T00:00:00-06:00" itemprop="datePublished">
+        Mar 8, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#governance">governance</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#explainability">explainability</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#responsible AI">responsible AI</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#ML">ML</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This year, for the first time, the FAccT conference has more than one track and there are 27 sessions (+80 talks) happening in 3 days. This is a summary of the first day of the main conference. My summary is based on the talks I attended based on my interest.</p>
+
+<h2 id="keynote">Keynote</h2>
+
+<p>As a person who’s been attending FAccT every year, I’ve been familiar with the criticism to the FAccT academic community; many studies appeared here are often too abstract or disconnected from the real world and the impacted communities. The organizers are aware of this and they have been making efforts such as organizing CRAFT (Critiquing and Rethinking Accountability, Fairness and Transparency) sessions where they bring more multidisciplinary stakeholders. I considered the first keynote from today, given by Yeshimabeit “Yeshi” Milner, the executive director and co-founder of <a href="https://d4bl.org/"><em>Data for Black Lives (D4BL)</em></a>, as a signal from the conference saying that they are actively working on this criticism. In this regard, it was an excellent keynote speech to kick off the conference.</p>
+
+<p>At the very beginning of the talk, Yeshi said, “we will never achieve fairness, accountability, and transparency <strong>without first demanding justice, power, and self-determination</strong>.” Again, this directly points out that without a holistic approach where we bring all the stakeholders, achieving justice and making changes isn’t going to happen. Yeshi then talked about racial disparity examples where Black people were discriminated and disproportionately affected in a negative way, especially in healthcare.</p>
+
+<p>She introduced the <a href="https://d4bl.org/covid19-data"><em>COVID-19 Data Tracker Project</em></a> where organizers in the D4BL members compiled a dataset by themselves to highlight the stark disparities in health outcomes related to COVID-19. She mentioned that the larger goal here is to “build the political power of Black communities” as well, which is a critical point. She also emphasized that <strong>any intervention that does not build political power or agency of the marginalized community is liable to harm</strong> rather than to help. Considering that even some tech-for-good projects with good intentions often sideline those who are affected by the system, her remark was poignant.</p>
+
+<p>“We need to think ‘who do we need to be’” At the end of the talk, she mentioned the importance of reflection, and said we need to resist the urge to feel compelled to keep moving forward, but to pause and reflect on ourselves. This involves identifying what we should unlearn and how we need to create new spaces to bring people who are directly impacted. I think this passionate and moving speech from Yeshi sent out this important message to all attendees, especially to academics and tech workers, like myself.</p>
+
+<h2 id="algorithm-audit-and-impact-assessment">Algorithm Audit and Impact Assessment</h2>
+
+<p>For tech workers who are interested robust and responsible AI like myself, case studies are like gems. We are always curious about how others do things and want to learn from each other. That’s why I was very happy to see a case study about algorithm audit from Wilson et al., <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445928"><em>Building and Auditing Fair Algorithms:A Case Study in Candidate Screening</em></a>.</p>
+
+<p>Researchers from Northeastern University worked with <a href="https://www.pymetrics.ai/">Pymetrics</a>, a company that uses gamification and AI to assist hiring in other companies. This collaboration itself was a unique instance because most audits happen internally or in a permission-less form where the companies being audited do not cooperate with the auditors. The academic researchers seemed to be quite transparent about the process (e.g., they revealed they were paid but the audit was done independently) and disclosed some problems in Pymetric’s system based on the criteria they used. I don’t know the full details yet but it was nice to hear that Pymetrics started working on solutions to fix these.</p>
+
+<p>Speaking of the audit, there was another interesting paper about Amazon’s questionable practice in product recommendation. It’s been known that Amazon created their own private brand and started competing against other brands. The paper, <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445944"><em>When the Umpire is also a Player: Bias in Private Label ProductRecommendations on E-commerce Marketplaces</em></a> investigates this issue by conducting a systematic audit on Amazon’s recommendation system. They found that Amazon’s private brand has greater exposure in the sponsored ads by comparing related item network (RIN) models between the private brand’s and others’ networks.</p>
+
+<p>Finally, there was a paper dedicated to algorithmic impact assessment. The authors in the paper, <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445935"><em>Algorithmic Impact Assessments (AIA) and Accountability: The Co-construction of Impacts</em></a>, pointed out that often poor impact assessment practices neither mitigate harm nor bring effective algorithm governance. They emphasized that impact assessment should be closely related to accountability, especially for both institutions and people who are affected. The paper showcases impact assessment examples from different domains, which will be useful to design an effective and accountable algorithmic impact assessment procedure.</p>
+
+<h2 id="trust-in-ai">Trust in AI</h2>
+
+<p>Speaking of impact assessment, if we have incredibly thoughtful (which is probably very detailed) impact assessment and documentation of deployed algorithms, does it bring more trust? The paper, <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445890"><em>The Sanction of Authority: Promoting Public Trust in AI</em></a>, says, perhaps not. The authors bring up the example of aviation industry. When we board on a plane, do we want to see the maintenance log, history of pilot performance to reassure ourselves? Or, do we normally trust that aviation is <strong>“highly regulated, comparatively safe, and any breach of safety will be sanctioned”</strong>? The authors suggest that the latter is how public trust is formed. This is an excellent point. Documentation of deployed AI systems can be as bad as terms of service statements, which usually have extremely poor readability and can be easily manipulated. I liked that the authors emphasized both the importance of regulatory system but also of <strong>externally auditable AI documentation</strong>, which would facilitate the development of AI regulations.</p>
+
+<h2 id="explainable-ai">Explainable AI</h2>
+
+<p><a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445941"><em>How Can I Choose an Explainer? An Application-Grounded Evaluation of Post-hoc Explanations</em></a> was a case study of comparing various XAI methods (LIME, SHAP, and <a href="https://github.com/andosa/treeinterpreter">TreeInterpreter</a>) and how human participants use explanations to perform fraud detection task. I was hoping to see a discussion of comparison and evaluation of various XAI methods in a standardized way but it was more about evaluating the suitability of these methods using case-specific real-human tasks. I’d like to take a deeper look at the paper to see whether the authors mentioned any suggestions on cases where it is challenging to run those tasks.</p>
+
+<h2 id="data-governance">Data Governance</h2>
+
+<p>My favorite talk of the day was <a href="https://arxiv.org/pdf/2010.13561.pdf"><em>Towards Accountability for Machine Learning Datasets: Practices from Software Engineering and Infrastructure</em></a> by Hutchinson et al.</p>
+
+<p>It’s not too difficult to meet ML practitioners who are obsessed with state-of-the-art deep learning models and conveniently ignore training data and how their data is preprocessed. These people often have a tendency of even looking down upon data preprocessing process and consider it demeaning. This paper takes a jab at this phenomenon.</p>
+
+<p>The authors first talk about data scapegoating. Even though everyone is well aware of “garbage in, garbage out” relationship between data and ML models, often data is overlooked and undervalued. Many ML practitioners depend on benchmark datasets, which <strong>“reinforce the notion of data as fixed resources.”</strong> In my experience, this tendency intensifies the fanaticism on ML algorithms even though they are just a tiny part of a much bigger picture. With many good off-the-shelf models readily available, frankly speaking, models are rather becoming commodities.</p>
+
+<p>They also point out the lack of good governance practice in data maintenance. Understanding ML model performance often requires good and detailed understanding of training data. However, validation and verification of training data is rarely conducted in ML engineering pipelines.</p>
+
+<p>Finally, the authors didn’t forget to mention the power imbalanced between ML practitioners and data providers. I often feel extremely fortunate that I have experienced the entire end-to-end process of an academic research. I started from scratch and designed a process to collect the data by myself, which required great care and intense labor. In the current ML trend, this step is often conveniently removed and thus creates a bad habit of ignoring labor and responsibility in the data collection and development process.</p>
+
+<p>I really appreciated the simplicity of the authors’ suggestion on this problem; <strong>“acknowledge that datasets are technical infrastructures.”</strong> Since many ML practitioners are familiar with tech infrastructures such as software programs, the authors suggest that we simply apply existing practices to datasets; create <strong>requirements, design, and tests</strong>. Once this formally becomes a part of infrastructure, it also becomes easy to get all the existing stakeholders in the pipeline involved.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="hongsups/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/governance/explainability/responsible%20ai/ml/2021/03/08/facct-2021-main1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Machine learning and tech blog by Hongsup Shin</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/hongsups" title="hongsups"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/hongsupshin" title="hongsupshin"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
